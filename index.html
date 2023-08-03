@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script defer src="js/bootstrap.bundle.min.js"></script>
+<style>
+    .image {
+        display: block;
+
+    }
+
+    .overlay,
+    .overlay2,
+    .overlay3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #2b336f;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 2s;
+    }
+
+    .card:hover .overlay,
+    .card:hover .overlay2,
+    .card:hover .overlay3 {
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        margin-top: -5px;
+    }
+
+    .navbar-toggler i {
+        margin: auto;
+    }
+    .cd-1{
+         box-shadow: 10px 5px 5px 5px rgb(230, 230, 230);
+    }
+</style>
+</head>
+
+<body>
+    <section>
+
+        <!-- top navbar -->
+        <div class="top-navbar  d-flex  ">
+            <div class="top-icons ">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="other-links">
+                <button id="btn-login"><a href="login.html"> Login</a></button>
+                <button id="btn-signup"><a href="signup.html"> Sign Up</a></button>
+               
+
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <!-- top navbar -->
+    </section>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1c1c50; height: 85px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="image/69957533.jpg" alt="fashion" style="width: 150px; height: 70px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="color:#1c1c50;"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: #1c1c50; color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clothe.html" style="color: white;">Clothe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: white;"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color:#1c1c50; color: white;">
+                                <li><a class="dropdown-item" href="clothe.html">T-Shirt</a></li>
+                                <li><a class="dropdown-item" href="clothe.html">Pants</a></li>
+                                <li><a class="dropdown-item" href="clothe.html">Smart Watch</a>
+                                </li>
+                                <li><a class="dropdown-item" href="clothe.html">Glasess</a></li>
+                                <li><a class="dropdown-item" href="clothe.html">Sport shoes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="color: white;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color: white;">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <main>
+
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="display:block;">
+            <!-- The slideshow/carousel -->
+
+            <div class="carousel-item active">
+                <img src="image/2907.jpeg" alt="Los Angeles" class="d-block " style="width:100%; height: 85vh;">
+                <div class="carousel-caption">
+                    <h2 style="color: rgb(23, 23, 41);">Biggest Clothe Sale </h2>
+                    <h3 style="color: rgb(23, 23, 41);">Up To 50% Off</h3>
+                    <p style="color: rgb(3, 3, 4);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officia, recusandae assumenda consequatur</p>
+                    <button class="btn" style="background-color: rgb(15, 15, 55); color: white;"> Shop Now</button>
+                </div><!-- carousel-caption -->
+            </div><!-- carousel-item -->
+
+        </div><!-- carousel -->
+        <br>
+        <br>
+        <br>
+
+    </main>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section-1>
+        <div class="container sec ">
+            <div class="row d-flex justify-content-center  ">
+                <div class="card cd-1 col-lg-3 col-md-6 col-sm-12  m-3 mt-5"
+                    style="width: 400px; height: 400px; border-right:2px solid #181835;">
+                    <img src="image/Zapatillas-Nike-AirMax-2015-Anniversary-Pack-0.jpg" alt="Avatar" class="image"
+                        style="width: 400px; height: 400px;">
+                    <div class="overlay">
+                        <div class="text">
+                            <h3>Nike Shoes</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elia
+                                <br> $150.10 <span style="text-decoration:line-through; color: black;" class="ml-3">$200.10 </span>
+                            </P>
+                        </div><!-- text -->
+                    </div><!-- overlay -->
+                </div><!-- card-1 -->
+
+                <div class="card  cd-1 col-lg-3 col-md-6 col-sm-12  m-3 mt-5" style="width: 400px; height: 400px;">
+                    <img src="image/smart-watch.jpeg" alt="Avatar" class="image2" style="width: 400px; height: 400px;">
+                    <div class="overlay2">
+                        <div class="text">
+                            <h3>Smart Watch</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elia
+                                <br> $200.60<span style="text-decoration: line-through; color: black;">$250.10 </span>
+                            </P>
+                        </div>
+                    </div><!-- overlay -->
+                </div><!-- card-1 -->
+
+                <div class="card cd-1 col-lg-3 col-md-6 col-sm-12  m-3 mt-5" style="width: 400px; height: 400px;">
+                    <img src="image/sqa1873_0.jpg" alt="Avatar" class="image2"
+                        style="width: 400px; height: 400px;">
+                    <div class="overlay3">
+                        <div class="text">
+                            <h3>Bag</h3>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elia
+                                <br> $50.10<span style="text-decoration: line-through; color: black;">$60 </span>
+                            </P>
+                        </div>
+                    </div><!-- overlay -->
+                </div><!-- card-1 -->
+
+
+
+            </div><!--sec1 -->
+        </div><!--container -->
+    </section-1>
+    <br><br>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section>
+
+        <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+
+            <div class="carousel-item active">
+                <img src="image/IMG-20230725-WA0039.jpg" alt="Los Angeles" class="d-block"
+                    style="width:100%; height: 500px;">
+                <div class="carousel-caption" style="margin-bottom: 150px;">
+                    <h2 style="color: rgb(255, 255, 255);">Get Up To 50% Off </h2>
+                    <p style="color: rgb(255, 255, 255);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate enim
+                        ipsa tempore. Vitae
+                        officia quisquam enim</p>
+                    <button class="btn b2">SHOP NOW</button>
+                </div><!-- carousel-caption -->
+            </div><!-- carousel-item -->
+
+        </div><!-- carousel -->
+
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section-2>
+        <div class="sec2">
+            <h2 class="title  p-3 ">PRODUCTS</h2>
+            
+              <div class="container  mt-3 " >
+                <div class="row justify-content-center">
+                    <div class="card col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ; "
+                            src="image/61caCs0NHNL._AC_SR525,789_FMwebp_QL65_.webp" alt="Card image">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color:  rgb(7, 7, 80);">Blue T-Shirt</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$32.60 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                    <div class="card  col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ;"
+                            src="image/61B6bCLm0XL._AC_UF350,350_QL80_FMwebp_.webp" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: rgb(7, 7, 80)">Girls Sandal</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$65.50 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                    <div class="card col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ;" src="image/1000223948.jpg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body pt-3">
+                            <h3 class="card-title" style="color: rgb(7, 7, 80);">Smart Watch</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$150.5 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                    <div class="card col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:460px ;" src="image/jacket.webp" alt="Card image">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color:  rgb(7, 7, 80);">Men Jacket</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$50.60 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                </div><!-- row -->
+
+            </div><!-- container -->
+           
+              <!-- //////////////////////////////////////// -->
+              <div class="container   " style="margin-top: 30px;">
+                <div class="row justify-content-center">
+                    <div class="card col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ;"
+                            src="image/sqa1873_0.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color:  rgb(7, 7, 80);">Bag</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$32.60 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                    <div class="card  col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ;"
+                            src="image/IMG-20230725-WA0037.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: rgb(7, 7, 80)">Girls Shoes</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$65.50 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                    <div class="card col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ;" src="image/smart-watch.jpeg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body pt-3">
+                            <h3 class="card-title" style="color: rgb(7, 7, 80);">Smart Watch</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$150.5 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                    <div class="card col-lg-3 col-md-6 col-sm-12  m-1 mt-5"
+                        style="width:300px; height:570px;  box-shadow:5px 5px 5px  rgb(239, 241, 248);">
+                        <img class="card-img-top" style="height:400px ;" src="image/pexels-ksenia-chernaya-4048682.jpg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color:  rgb(7, 7, 80);">Girls T-Shirt</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet
+                                <br>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </p>
+                            <p>$50.60 <a href="#" style="color:  rgb(7, 7, 80);
+                            font-size: 15px ; padding-left: 140px;"> <i class="fa-solid fa-cart-shopping icons"></i></a></p>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                </div><!-- row -->
+
+
+            </div><!-- container -->
+        </div><!-- sec2 -->
+    
+        </section-2>
+        <br>
+        <br>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+        <section>
+            <div class="b col-12" >
+                <button class="btn ">
+                    <a href="clothe.html" style="text-decoration: none; color: white;">View More</a>
+                </button>
+            </div>
+        </section>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <section-4>
+            
+            <div class="container  sec4">
+                <div class="col-12  section-intro text-center ">
+                    <h1 class="h1-services">Why Shop With Us</h1>
+                   
+                </div>
+           
+          
+                <div class="row  justify-content-center">
+                <div class="card col-md-4 col-sm-12 m-5" style="width: 300px; height: 300px; border: 2px solid rgb(15, 21, 76 ,0.2); 
+                text-align: center; padding-top: 55px;  box-shadow: 0px 17px 29px 1px rgb(205, 205, 205); border-radius: 20px;">
+                    <i class="fa-solid fa-cart-shopping card-img-top" style="color: #1c1c50;"></i>
+    
+                    <div class="card-body">
+                        <h3>Free Shipping</h3>
+                        <p class="card-text">On order over $100</p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-md-4 col-sm-12 m-5" style="width: 300px; height: 300px; border: 2px solid rgb(15, 21, 76 ,0.2); 
+                text-align: center; padding-top: 55px;  box-shadow: 0px 17px 29px 1px rgb(223, 223, 223); border-radius: 20px;">
+                    <i class="fa-solid fa-truck card-img-top" style="color: #1c1c50;"></i>
+    
+                    <div class="card-body">
+                        <h3>Fast Deliivery</h3>
+                        <p class="card-text">World wide</p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                <div class="card col-md-4 col-sm-12 m-5" style="width: 300px; height: 300px; border: 2px solid rgb(15, 21, 76 ,0.2); 
+                text-align: center; padding-top: 55px; box-shadow: 0px 17px 29px 1px rgb(202, 202, 202); border-radius: 20px;">
+                    <i class="fa-solid fa-thumbs-up card-img-top" style="color: #1c1c50;"></i>
+                    <div class="card-body">
+                        <h3>Big Choice</h3>
+                        <p class="card-text">Of product</p>
+                    </div><!-- card-body -->
+                </div><!-- card -->
+                </div><!-- row -->
+            </div><!-- container -->
+    </section-4>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="container-fluid  text-light footer mt-5 my-6 mb-0 py-5 wow fadeIn "
+        style="background-color: rgb(7, 7, 80);">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Fashion</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate accusantium sit</p>
+                    <p>Karcahi</p>
+                    <p>Sindh</p>
+                    <p>Pakistan</p>
+
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Phone: +012 555 99998</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Email: info@example.com</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Usefull Links</h4>
+                    <p> <a class="btn btn-link foot" href="index.html">Home</a></p>
+                    <p> <a class="btn btn-link foot" href="clothe.html">Clothe</a></p>
+                    <p><a class="btn btn-link foot" href="">Category</a></p>
+                    <p> <a class="btn btn-link foot" href="about.html">About Us</a></p>
+                    <p> <a class="btn btn-link foot" href="contact.html">Contact Us</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6" style="color: white;">
+                    <h4 class="text-light mb-4">Our Services</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident</p>
+                    <p><a class="btn btn-link foot" href="">Smart phone</a></p>
+                    <p><a class="btn btn-link foot" href="">Smart watch</a></p>
+                    <p><a class="btn btn-link foot" href="">Airpods</a></p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Our Social Network</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident</p>
+                    <div class="row g-2">
+                        <div class="col-2">
+                            <a href="" style="color: white; font-size: 20px;"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" style="color: white; font-size: 20px; "> <i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" style="color: white; font-size: 20px;"> <i class="fa-brands fa-google"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" style="color: white; font-size: 20px;"> <i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="" style="color: white; font-size: 20px;"> <i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+</body>
+
+</html>
